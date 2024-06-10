@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews - Greenwood Community Library</title>
+</head>
+<body>
+    <header>
+        <h1>Book Reviews</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Featured Reviews</h2>
+            <div class="review">
+                <h3>The Great Gatsby</h3>
+                <p>By F. Scott Fitzgerald</p>
+                <p>"A masterpiece that captures the Jazz Age and the American Dream with unparalleled elegance."</p>
+            </div>
+            <div class="review">
+                <h3>To Kill a Mockingbird</h3>
+                <p>By Harper Lee</p>
+                <p>"A poignant exploration of racial injustice and moral growth told through the eyes of Scout Finch."</p>
+            </div>
+        </section>
+        <section>
+            <h2>Submit Your Own Review</h2>
+            <form action="/submit_review" method="post">
+                <label for="book_title">Book Title:</label><br>
+                <input type="text" id="book_title" name="book_title" required><br>
+                <label for="author">Author:</label><br>
+                <input type="text" id="author" name="author" required><br>
+                <label for="your_review">Your Review:</label><br>
+                <textarea id="your_review" name="your_review" rows="4" cols="50" required></textarea><br>
+                <input type="submit" value="Submit Review">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Greenwood Community Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
